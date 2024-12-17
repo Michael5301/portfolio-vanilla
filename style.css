@@ -20,6 +20,7 @@ a,
 button {
         text-decoration: none;
         list-style: none;
+        color: inherit;
 }
 
 h1 {
@@ -27,13 +28,22 @@ h1 {
         font-family: 32px;
 }
 
+h2{
+
+}
+
+p{
+        
+}
+
 button {
         padding: 10px 10px;
-        background-color: white;
+        background-color: teal;
+        color: black;
         /* color:white; */
         font-size: 20px;
         width: 200px;
-        border: 1px solid black;
+        border: none;
         border-radius: 5px;
 }
 
@@ -42,6 +52,9 @@ button:hover {
         cursor: pointer;
         color: #ffffff;
         border: none;
+
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
 }
 
 .navigation {
@@ -65,23 +78,10 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nav-link:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+}
 
 
 
@@ -96,7 +96,7 @@ button:hover {
         max-width: 1024px;
         margin: 0px auto;
         height: auto;
-        padding: 120px 20px 60px 20px;
+        padding: 140px 20px 60px 20px;
 }
 
 .heroimage-container {
@@ -132,9 +132,11 @@ p {
         gap: 40px;
         padding: 20px;
         text-align: center;
+
+
 }
 
-.work-heading{
+.work-heading {
         font-size: 36px;
 }
 
@@ -143,22 +145,30 @@ p {
         justify-content: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 50px;
+        max-width: 1024px;
 }
 
 .stack {
         background-color: white;
-        border: solid 1px rgb(185, 91, 91);
-        padding: 4px 20px;
-        border-radius: 25px;
+        padding: 4px 10px;
+        border-radius: 5px;
+        background: #ffffff;
+        box-shadow: 20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff;
+
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
 }
 
 .stack:hover {
-        background-color: teal;
-        color: white;
-        font: bold;
-        font-size: 20px;
-        border: none;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
 }
 
 
@@ -304,7 +314,7 @@ footer {
 
 
 @media screen and (max-width:540px) {
-        .hero{
+        .hero {
                 display: flex;
                 flex-direction: column;
                 padding-top: 20px;
