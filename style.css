@@ -1,0 +1,318 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-family: "Montserrat", serif;
+        box-sizing: border-box;
+        animation-duration: 1000;
+
+}
+
+html {
+        scroll-behavior: smooth;
+}
+
+ul,
+li,
+a,
+button {
+        text-decoration: none;
+        list-style: none;
+}
+
+h1 {
+        font-weight: 400;
+        font-family: 32px;
+}
+
+button {
+        padding: 10px 10px;
+        background-color: white;
+        /* color:white; */
+        font-size: 20px;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 5px;
+}
+
+button:hover {
+        background-color: teal;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+}
+
+.navigation {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        border-bottom: solid 1px black;
+        z-index: 1000;
+}
+
+.nav-link {
+        display: flex;
+        gap: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hero */
+.hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        max-width: 1024px;
+        margin: 0px auto;
+        height: auto;
+        padding: 120px 20px 60px 20px;
+}
+
+.heroimage-container {
+        position: relative;
+        max-width: 512px;
+        height: auto;
+}
+
+.hero.hero-image {
+        position: absolute;
+        height: 300px;
+        object-fit: cover;
+        overflow: hidden;
+}
+
+.hero-text h1,
+p {
+        margin-bottom: 10px;
+}
+
+.hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+/* work technology */
+
+.work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+        text-align: center;
+}
+
+.work-heading{
+        font-size: 36px;
+}
+
+.workwraper {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+}
+
+.stack {
+        background-color: white;
+        border: solid 1px rgb(185, 91, 91);
+        padding: 4px 20px;
+        border-radius: 25px;
+}
+
+.stack:hover {
+        background-color: teal;
+        color: white;
+        font: bold;
+        font-size: 20px;
+        border: none;
+}
+
+
+
+
+
+/* My projects general css */
+
+/* set section to flex col, margin y 0px */
+/* .project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0px auto;
+} */
+
+/* .article{  */
+/* container with layers */
+/* position: relative; */
+/* display: block; */
+/* background-image: url(Image/project1.jpg); */
+/* max-width: 1000px; */
+/* height: 500px; */
+/* margin: auto; */
+/* background-size: cover; */
+/* background-repeat: no-repeat; */
+/* padding: 20px 0px; */
+/* } */
+
+
+/* set image container position to relative */
+/* .imagecontainer {
+        position: relative;
+        border-radius: 5px;
+        height: 50vh;
+} */
+
+
+/* Set image width and height  */
+/* .imagecontainer img { */
+/* width: 100%; Adjust width as needed */
+/* height: 50vh; */
+/* border-radius: 5px; */
+/* } */
+
+/* Set the overlay div position to absolute */
+/* .overlay { */
+/* position: absolute; */
+/* top: 0px; */
+/* width: 100%; */
+/* height: 50vh; */
+/* border-radius: 5px; */
+/* background-color: rgb(0, 0, 0, 0.6); */
+/* display: none; */
+/* } */
+
+/* set article position to absolute also */
+/* .articleInfo {
+        position: absolute;
+        bottom: 0px;
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        color: white;
+} */
+
+/* .articleInfo button{
+        color: white;
+        background-color: black;
+} */
+
+
+
+
+
+/* inset: 0px; short hand for top left bottom right */
+
+
+.projects-container {
+        padding: 60px 20px 0px 20px;
+}
+
+.project-heading {
+        text-align: center;
+        font-size: 36px;
+}
+
+
+/* project display settings */
+.project {
+        margin: 40px auto;
+        max-width: 1024px;
+        height: 450px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+}
+
+.img-container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: transform 150ms;
+}
+
+.project-image {
+        position: absolute;
+        inset: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.overlay {
+        position: absolute;
+        inset: 0px;
+        background-color: hsl(0, 0%, 0%, 0.5);
+}
+
+.article-info {
+        position: absolute;
+        bottom: 0px;
+        color: white;
+        padding: 10px;
+        border: 0px;
+}
+
+
+/* footer */
+footer {
+        text-align: center;
+        background-color: teal;
+        padding: 20px 20px;
+        margin-top: 40px;
+
+}
+
+
+
+
+@media screen and (max-width:540px) {
+        .hero{
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                max-width: 80%;
+        }
+
+        .hero image {
+                object-fit: cover;
+                overflow: hidden;
+        }
+}
