@@ -26,32 +26,42 @@ button {
 }
 
 h1 {
+        font-family: "Roboto", serif;
         font-size: 48px;
-        font-weight: 500;
-        font-family: ;
+        font-weight: 700;
 }
 
 h2{
+        font-family: "Roboto", serif;
         font-size: 36px;
-        font-weight: 400;
-        font-family: 
+        font-weight: 500;
+}
+
+.logo{
+        font-weight: 100;
+}
+
+.logo:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+
 }
 
 p{
-        font-size: 18px;
-        font-weight: 400px ;
-        font-family: ;
+        font-family: "Montserrat", serif;
+        font-weight: 300;
+        font-style: normal;
 }
 
 button {
         padding: 10px 10px;
-        background-color: rgb(0, 128, 128, 0.8);
+        background-color: white;
         color: black;
         /* color:white; */
+        font-family: "Roboto", serif;
         font-size: 20px;
         width: 200px;
-        border: none;
-        border-radius: 5px;
+        border: 1px solid coral;
 }
 
 button:hover {
@@ -68,6 +78,35 @@ button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                /* NAVIGATION */
+
+
 .navigation {
         position: fixed;
         top: 0px;
@@ -77,7 +116,7 @@ button:hover {
         justify-content: space-between;
         align-items: center;
         margin: auto;
-        padding: 0px;
+        padding: 20px;
         background-color: white;
         border-bottom: solid 1px teal;
         z-index: 1000;
@@ -98,18 +137,39 @@ button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* hero */
 .hero {
-        /* position: relative; */
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 40px;
         max-width: 1024px;
         /* margin: 0px auto; */
-        margin: 30px auto;
+        margin: 60px auto;
         height: auto;
-        padding: 140px 20px 60px 20px;
+        padding: 60px 20px;
         border-bottom: 1px solid teal;
 }
 
@@ -149,7 +209,36 @@ p {
         gap: 30px;
 }
 
-/* work technology */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                /* EXPERIENCES*/
 
 .work {
         display: flex;
@@ -212,6 +301,35 @@ p {
         transform: scale(1.1);
         transition: transform 0.3s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,6 +411,40 @@ p {
 /* inset: 0px; short hand for top left bottom right */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   /* PROJECTS */
+
+
+
+
+
 .projects-container {
         padding: 30px 20px;
         border-bottom: 1px solid teal;
@@ -315,19 +467,19 @@ p {
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        margin: 30px auto 30px auto;
+        margin: 60px auto 30px auto;
 }
 
 .img-container {
         /* height: 100%; */
         /* width: 100%; */
         position: relative;
-        transition: transform 150ms;
 }
 
 .project-image {
-        position: absolute;
-        inset: 0px;
+        /* position: absolute; */
+        /* inset: 0px; */
+        margin: 0;
         /* width: 100%; */
         /* height: 100%; */
         object-fit: cover;
@@ -336,14 +488,20 @@ p {
 .overlay {
         position: absolute;
         inset: 0px;
-        background-color: hsl(0, 0%, 0%, 0.5);
+        background-color: rgb(255, 127, 80, 0.8);
+}
+
+.overlay:hover {
+        background-color: rgb(255, 127, 80, 0.2);
+        transition: transform 2s ease-in-out;
+
 }
 
 .article-info {
         position: absolute;
         bottom: 0px;
         color: white;
-        padding: 10px;
+        padding: 20px;
         border: 0px;
 
         display: flex;
@@ -370,10 +528,24 @@ footer {
                 flex-direction: column;
                 padding-top: 20px;
                 max-width: 80%;
+                margin-top: 80px;
         }
 
         .hero image {
                 object-fit: cover;
                 overflow: hidden;
+        }
+
+        .projects-containe{
+                max-width: 80%;
+        }
+
+        .work{
+                max-width: 80vw;
+
+        }
+
+        .navigation{
+                padding: 20px;
         }
 }
