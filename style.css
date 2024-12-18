@@ -21,24 +21,31 @@ button {
         text-decoration: none;
         list-style: none;
         color: inherit;
+        font-size: 24px;
+        font-weight: 400px;
 }
 
 h1 {
-        font-weight: 400;
-        font-family: 32px;
+        font-size: 48px;
+        font-weight: 500;
+        font-family: ;
 }
 
 h2{
-
+        font-size: 36px;
+        font-weight: 400;
+        font-family: 
 }
 
 p{
-        
+        font-size: 18px;
+        font-weight: 400px ;
+        font-family: ;
 }
 
 button {
         padding: 10px 10px;
-        background-color: teal;
+        background-color: rgb(0, 128, 128, 0.8);
         color: black;
         /* color:white; */
         font-size: 20px;
@@ -57,6 +64,10 @@ button:hover {
         transition: transform 0.3s ease-in-out;
 }
 
+/* end of functionality and rese              */
+
+
+
 .navigation {
         position: fixed;
         top: 0px;
@@ -64,17 +75,17 @@ button:hover {
         left: 0px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: auto;
-        padding: 20px;
+        padding: 0px;
         background-color: white;
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px teal;
         z-index: 1000;
 }
 
 .nav-link {
         display: flex;
-        gap: 10px;
-
+        gap: 20px;
 }
 
 
@@ -89,38 +100,53 @@ button:hover {
 
 /* hero */
 .hero {
+        /* position: relative; */
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 40px;
         max-width: 1024px;
-        margin: 0px auto;
+        /* margin: 0px auto; */
+        margin: 30px auto;
         height: auto;
         padding: 140px 20px 60px 20px;
+        border-bottom: 1px solid teal;
 }
 
 .heroimage-container {
         position: relative;
         max-width: 512px;
         height: auto;
+        /* max-width: ; */
+        /* height: auto; */
 }
 
-.hero.hero-image {
-        position: absolute;
-        height: 300px;
+/* .hero */
+.hero-image {
+        /* position: relative; */
+        /* height: 300px; */
+        max-width: 512px;
         object-fit: cover;
         overflow: hidden;
 }
 
-.hero-text h1,
+.overlayheroimage {
+        position: absolute;
+        inset: 0;
+        /* width: 100vw; */
+        /* height: 100vh; */
+        background-color: rgb(0, 128, 128, 0.5);
+}
+
+/* .hero-text h1,
 p {
         margin-bottom: 10px;
-}
+} */
 
 .hero-text {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
 }
 
 /* work technology */
@@ -129,29 +155,41 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
-        padding: 20px;
-        text-align: center;
-
+        gap: 30px;
+        padding: 30px 20px;
+        margin: 20px auto;
+        /* text-align: center; */
+        position: relative;
+        max-width: 1024px;
+        border-bottom: 1px solid teal;
 
 }
 
-.work-heading {
-        font-size: 36px;
-}
 
 .workwraper {
+        position: relative;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 60px;
         max-width: 1024px;
+        /* padding-top: 50px; */
+
 }
+
+/* .wrappercover {
+        position: absolute;
+        top: 0px;
+        width: 100x;
+        height: 100px;
+        background-color: rgb(46, 6, 6);
+        z-index: 1000;
+} */
 
 .stack {
         background-color: white;
-        padding: 4px 10px;
+        padding: 5px 5px;
         border-radius: 5px;
         background: #ffffff;
         box-shadow: 20px 20px 60px #d9d9d9,
@@ -160,11 +198,15 @@ p {
 
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 4px;
         justify-content: center;
         align-items: center;
-        width: 100px;
+        /* width: 100px; */
+        width: 150px;
+
+        font-family: 12px;
 }
+
 
 .stack:hover {
         transform: scale(1.1);
@@ -252,8 +294,14 @@ p {
 
 
 .projects-container {
-        padding: 60px 20px 0px 20px;
+        padding: 30px 20px;
+        border-bottom: 1px solid teal;
+        max-width: 1024px;
+        margin: 30px auto;
+
+
 }
+
 
 .project-heading {
         text-align: center;
@@ -263,17 +311,17 @@ p {
 
 /* project display settings */
 .project {
-        margin: 40px auto;
-        max-width: 1024px;
+        /* max-width: 1024px; */
         height: 450px;
         border-radius: 10px;
         overflow: hidden;
         position: relative;
+        margin: 30px auto 30px auto;
 }
 
 .img-container {
-        height: 100%;
-        width: 100%;
+        /* height: 100%; */
+        /* width: 100%; */
         position: relative;
         transition: transform 150ms;
 }
@@ -281,8 +329,8 @@ p {
 .project-image {
         position: absolute;
         inset: 0px;
-        width: 100%;
-        height: 100%;
+        /* width: 100%; */
+        /* height: 100%; */
         object-fit: cover;
 }
 
@@ -298,6 +346,10 @@ p {
         color: white;
         padding: 10px;
         border: 0px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 }
 
 
@@ -313,7 +365,7 @@ footer {
 
 
 
-@media screen and (max-width:540px) {
+@media screen and (max-width: 540px ) {
         .hero {
                 display: flex;
                 flex-direction: column;
