@@ -44,13 +44,13 @@ h2 {
 }
 
 .logo {
-        font-size: 48px;
-        font-weight: 200;
+        font-size: 50px;
         font-family: "Noto Sans JP", serif;
         font-weight: 300;
-        /* margin: auto 0px; */
+        margin: auto 0px;
         /* items: center; */
         text-align: center;
+        /* margin: auto; */
 
 }
 
@@ -70,18 +70,17 @@ p {
 button {
         padding: 10px 10px;
         background-color: white;
-        color: black;
+        color: rgb(0, 0, 0, 0.8);
         font-family: "Roboto", serif;
-        font-size: 20px;
+        font-size: 24px;
         width: 200px;
         border: 1px solid coral;
 }
 
 button:hover {
-        background-color: teal;
+        background-color: white;
         cursor: pointer;
-        color: #ffffff;
-        border: none;
+        border: 1px teal solid;
         transform: scale(1.05);
         transition: transform 0.3s ease-in-out;
 }
@@ -121,6 +120,7 @@ button:hover {
 
 .navigation {
         position: fixed;
+        height: 70px;
         top: 0px;
         right: 0px;
         left: 0px;
@@ -138,6 +138,7 @@ button:hover {
         display: flex;
         align-items: center;
         gap: 20px;
+        font-size: 48px;
 }
 
 .navitems:hover {
@@ -166,31 +167,27 @@ button:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
+        gap: 60px;
         max-width: 1024px;
-        margin: 60px auto;
-        height: auto;
-        padding: 60px 20px;
+        margin: 110.4px auto 0px auto;
+        padding: 0px 20px;
+        height: 100vh;
         border-bottom: 1px solid teal;
 }
 
 .heroimage-container {
-        position: relative;
-        max-width: 400px;
-        height: auto;
+        width: 100%;
+        height: 400px;
 }
 
 .hero-image {
-        max-width: 512px;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
         overflow: hidden;
+        filter: grayscale(16);
 }
 
-.overlayheroimage {
-        position: absolute;
-        inset: 0;
-        background-color: rgb(0, 128, 128, 0.5);
-}
 
 
 .hero-text {
@@ -199,6 +196,12 @@ button:hover {
         gap: 30px;
 }
 
+.myname {
+        font-weight: 500;
+        font-weight: 500;
+        font-size: 48px;
+        color: coral;
+}
 
 
 
@@ -230,47 +233,41 @@ button:hover {
 
                                                 /* EXPERIENCES*/
 
+
 .work {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 40px;
-        padding: 30px 20px;
-        margin: 20px auto;
-        position: relative;
+        gap: 60px;
+        padding: 0px 20px;
+        margin: 0px auto; 
         max-width: 1024px;
+        height: 100vh;
         border-bottom: 1px solid teal;
-
 }
-
 
 .workwraper {
-        position: relative;
+         /* position: relative; */
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin: auto 0px;
+        /* margin: auto; */
         flex-wrap: wrap;
-        gap: 60px;
-        /* max-width: 1024px; */
+        gap: 40px;
+        max-width: 1024px;
 
 }
-
-
 
 .stack {
         background-color: white;
-        padding: 5px;
+        padding:10px 5px;
         border-radius: 5px;
         background: #ffffff;
         box-shadow: 20px 20px 60px #d9d9d9,
                 -20px -20px 60px #ffffff;
-        align-items: center;
         text-align: center;
-        width: 150px;
+        width: 250px;
 }
-
-
 
 .stack:hover {
         transform: scale(1.1);
@@ -423,28 +420,30 @@ button:hover {
 
 
 .projects-container {
-        padding: 30px 20px;
+        padding: 0px 20px;
         border-bottom: 1px solid teal;
         max-width: 1024px;
-        margin: 30px auto;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
 
 }
 
 
 .project-heading {
         text-align: center;
-        font-size: 36px;
+        padding-top: 50px;
 }
 
 
 /* project display settings */
 .project {
-        /* max-width: 1024px; */
-        height: 450px;
-        border-radius: 10px;
+        height: 33vh;
+        border-radius: 5px;
         overflow: hidden;
         position: relative;
-        margin: 60px auto 30px auto;
         box-shadow: 20px 20px 60px #d9d9d9,
                 -20px -20px 60px #ffffff;
 }
@@ -468,8 +467,9 @@ button:hover {
 
 .overlay {
         position: absolute;
+        height: 33vh;
         inset: 0px;
-        background-color: rgb(255, 127, 80, 0.8);
+        background-color: rgba(9, 7, 7, 0.7);
 
 }
 
