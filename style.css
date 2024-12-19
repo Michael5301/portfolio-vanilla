@@ -107,7 +107,7 @@ button:hover {
 
 
 
-/* NAVIGATION */
+                                                /* NAVIGATION */
 
 
 .navigation {
@@ -241,7 +241,7 @@ p {
 
 
 
-/* EXPERIENCES*/
+                                                /* EXPERIENCES*/
 
 .work {
         display: flex;
@@ -444,7 +444,7 @@ p {
 
 
 
-/* PROJECTS */
+                                                   /* PROJECTS */
 
 
 
@@ -551,17 +551,16 @@ footer {
                 overflow: hidden;
         }
 
-        .projects-containe {
+        .projects-containe{
                 max-width: 80%;
         }
 
-        .work {
+        .work{
                 max-width: 80vw;
 
         }
 
-        .navigation {
+        .navigation{
                 padding: 20px;
-                margin: auto;
         }
 }
